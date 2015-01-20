@@ -4236,8 +4236,6 @@ declare module THREE {
          * default is 0.
          */
         clearAlpha?: number;
-
-        devicePixelRatio?: number;
     }
 
 

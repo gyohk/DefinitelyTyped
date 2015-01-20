@@ -6,13 +6,8 @@
 /// <reference path="./three.d.ts" />
 
 declare module THREE {
-    export interface SpriteCanvasMaterialParameters extends MaterialParameters{
-        color?: number;
-
-    }
-
     export class SpriteCanvasMaterial extends Material {
-        constructor(parameters?: SpriteCanvasMaterialParameters);
+        constructor(parameters?: MaterialParameters);
 
         color: Color;
 
@@ -22,7 +17,7 @@ declare module THREE {
 
     export interface CanvasRendererParameters {
         canvas?: HTMLCanvasElement;
-        devicePixelRatio?: number;
+        alpha?: number;
     }
 
     export class CanvasRenderer implements Renderer {
